@@ -1,0 +1,105 @@
+F405 VTOP Ardupilot Parameter Setup
+https://ardupilot.org/plane/docs/parameters-Plane-stable-V4.4.3.html
+1st released: 2023/12/22
+
+BATT_VOLT_PIN 14 定義哪個類比輸入接腳被用來測量電池電壓, 特定的接腳取決於您的飛控硬體。
+BATT_VOLT_MULT 21 電池電壓監測系統的校準乘數, 將從類比輸入引腳讀取的原始電壓值轉換為實際的電池電壓。 具體的乘數值取決於您的電池監測系統和電壓感測器
+
+BATT_CURR_PIN 15 定義哪個類比輸入接腳被用來測量電池電流, 特定的接腳取決於您的飛控硬體。
+BATT_AMP_PERVLT 66.7 電池電流監測系統的校準常數, 將從類比輸入引腳讀取的原始電流值轉換為實際的電池電流值。 意味著每伏特的模擬輸入值對應66.7安培的電流。 具體的轉換因子取決於您的電流感測器和電池配置。
+
+RSSI_TYPE 2 定義RSSI訊號的類型或格式。 2意味著飛控從電壓作為RSSI訊號。 #重囉後才會出現RSSI參數選項
+RSSI_ANA_PIN 8 定義讀取模擬RSSI訊號的飛控板上的類比輸入接腳。 8意味著RSSI訊號將從引腳編號8讀取。
+
+BRD_ALT_CONFIG 1 飛控板將使用預先定義的第一套備用硬體配置, 飛控板將切換到另一組感測器（例如備用的GPS、磁力計或IMU）.
+SERIAL6_PROTOCOL 23 定義飛控板上第六個串列埠（Serial 6）的通訊協定, 23表示此埠被配置為支援MSP（MultiWii Serial Protocol）, 使用MSP連接到具有OSD（On-Screen Display）功能 的設備.
+
+SERIAL6_OPTIONS 0 設定第六個序列埠（Serial 6）的附加選項和行為。 0意味著該連接埠沒有啟用任何特殊選項，以預設的行為方式運作。 標準的全雙工串行通訊。
+SERIAL6_BAUD 115 設定第六個序列埠（Serial 6）的波特率（baud rate）。 115表示該連接埠的通訊波特率被設定為115200位元/秒。
+
+COMPASS_AUTODEC 1 參數用於控制羅盤（磁力計）的磁偏角（magnetic declination）是否自動設定。 設定為1時，表示飛控系統將自動計算並設定磁偏角。
+[n/a] Address 0x76 設備在I²C（Inter-Integrated Circuit）總線上的位址
+
+ARSPD_TYPE 0 設定空速計（Airspeed Sensor）的型別。 設定為0時，空速計功能已停用。
+# ARSPD_TYPE 1 ARSPD_TYPE 參數定義了空速計的型別或模型。 1: MS4525
+# ARSPD_TYPE 2 ARSPD_TYPE 參數定義了空速計的型別或模型。 2: analog
+# ARSPD_TYPE 9 ARSPD_TYPE 參數定義了空速計的型別或模型。 9: DLVR-L10D
+[n/a] ARSPD_BUS 1 參數定義了空速計連接到的I²C匯流排編號。 設定為1意味著空速計連接到I²C總線1。
+[n/a] ARSPD_PIN 10 定義了飛控板上用於接收空速計訊號的類比輸入引腳。 設定為10表示空速計的訊號將從飛控板上的接腳編號10讀取。
+
+RCMAP_PITCH 2 將俯仰控制映射到遙控器的第2通道
+RCMAP_ROLL 1 將橫滾控制映射到遙控器的第1通道
+RCMAP_THROTTLE 3 將油門控制映射到遙控器的第3通道
+RCMAP_YAW 4 將偏航控制映射到遙控器的第4通道
+
+RC5_OPTION 153 定義遙控器的第五通道（RC5）所執行的特定功能, ARM/DIS-ARM
+FLTMODE_CH 6 遙控器的第六通道（通常是旋鈕或開關）被用來切換飛行模式
+FLTMODE1 19 Q-LOITER (PWM 910-1230)
+FLTMODE2 11 RTL (PWM 1231-1360)
+FLTMODE3 5 FBWA (PWM 1361-1490)
+FLTMODE4 5 FBWA (PWM 1491-1620)
+FLTMODE5 0 Manual (PWM 1621-1749)
+FLTMODE6 11 RTL (PWM 1750-2049)
+OSD1_FLTMODE_EN 1 啟用（Enable）飛行模式資訊在OSD上的顯示。 飛行模式資訊將會被顯示在OSD螢幕上。
+OSD1_FLTMODE_X 2 設定飛航模式資訊的水平位置（X座標）。
+OSD1_FLTMODE_Y 8 設定飛行模式資訊的垂直位置（Y座標）。
+
+RNGFND_LANDING 0 用於控制是否在著陸過程中使用測距儀。 此參數設定為0表示在著陸時不使用測距儀。
+RNGFND1_TPYE 0 定義了第1個測距儀的類型。 設定為0意味著沒有配置或啟用第1個測距儀。
+RNGFND2_TPYE 0 定義了第2個測距儀的類型。 設定為0意味著沒有配置或啟用第2個測距儀。
+RNGFND3_TPYE 0 定義了第3個測距儀的類型。 設定為0意味著沒有配置或啟用第3個測距儀。
+RNGFND4_TPYE 0 定義了第4個測距儀的類型。 設定為0意味著沒有配置或啟用第4個測距儀。
+RNGFND5_TPYE 0 定義了第5個測距儀的類型。 設定為0意味著沒有配置或啟用第5個測距儀。
+RNGFND6_TPYE 0 定義了第6個測距儀的類型。 設定為0意味著沒有配置或啟用第6個測距儀。
+RNGFND7_TPYE 0 定義了第7個測距儀的類型。 設定為0意味著沒有配置或啟用第7個測距儀。
+RNGFND8_TPYE 0 定義了第8個測距儀的類型。 設定為0意味著沒有配置或啟用第8個測距儀。
+RNGFND9_TPYE 0 定義了第9個測距儀的類型。 設定為0意味著沒有配置或啟用第9個測距儀。
+RNGFNDA_TPYE 0 定義了第10個測距儀的類型。 設定為0意味著沒有配置或啟用第10個測距儀。
+
+LOG_BACKEND_TYPE 0 設定日誌記錄的後端類型。 設定為0時，這通常表示停用了所有的日誌記錄功能。
+LOG_BITMASK 0 參數用於控制飛行日誌記錄的詳細程度。 設定為0時，這表示停用了所有的飛行日誌記錄功能。
+
+TERRAIN_ENABLE 0 參數用於控制地形跟隨功能的啟用或停用。 設定為0表示停用了地形跟隨功能。
+
+ARMING_CHECK 751998 參數用於確定在解鎖（arming）飛行器之前需要進行哪些檢查。 (setup per bitmask for details) #Painless360 suggest: 785278
+
+Q_ENABLE 1 數用於啟用或停用QuadPlane功能，這是針對那些同時具備固定翼和多旋翼飛行能力的飛行器的設定。 1意味著啟用了QuadPlane功能。
+Q_FRAME_CLASS 7 參數定義了四旋翼飛機的框架類別。 7表示Tri Plane佈局。
+Q_FRAME_TYPE 0 參數定義了旋翼的具體類型。 0表示"+"佈局。 馬達和螺旋槳被安排成一個“+”形狀。
+Q_TILT_ENABLE 1 參數用於啟用或停用QuadPlane（一種具有垂直起降能力的固定翼飛機）的傾轉旋翼（Tiltrotor）功能。 1意味著啟用了傾轉旋翼功能。 #重囉後才會出現Q_TILT選項
+Q_TILT_TYPE 2 參數用於定義QuadPlane（具有垂直起降能力的固定翼飛機）的傾轉旋翼（tilt-rotor）機構的類型。 2通常表示Vectored Yaw傾轉旋翼控制偏航。
+Q_TILT_MASK 3 參數用來定義哪些馬達應該被視為傾轉旋翼（tiltrotor）.3等於00000011表示第1和第2馬達是傾轉旋翼。
+Q_ASSIST_SPEED -1 參數用於在空速降至某個特定值以下時自動啟用旋翼提供額外的升力和穩定性。 -1意味著禁用了輔助模式。
+Q_M_PWM_TYPE 6 參數用於設定多旋翼馬達控制器（ESC）的PWM協議類型。 6表示使用DShot600通訊協議。
+Q_OPTIONS 688129 參數用於設定一系列的選項。 (setup per bitmask for details)
+Q_TRANS_FAIL 10 參數用於設定在嘗試從垂直起降（VTOL）模式過渡到固定翼模式的時間閾值,超出閾值啓動失敗處理。 10: 10秒.
+Q_RTL_MODE 1 參數用於設定執行RTL模式時的行為。 1：先以固定翼模式飛回，然後切換到VTOL模式進行垂直降落。
+Q_RTL_ALT 50 參數用於設定執行RTL模式時的飛行高度。 50:50米.
+Q_TILT_RATE_DN 20 20表示從懸停到向前飛行時馬達角度變化的最大速度，最多20度/秒。
+Q_TILE_RATE_UP 80 80表示從向前飛行到懸停時馬達角度變化的最大速度，最多80度/秒。
+Q_TRANSITION_MS 5000 參數用於設定從垂直起降（VTOL）模式到固定翼模式的過渡時間長度。 5000意味將花費5000毫秒完成過渡。
+Q_WVANE_HGT_MIN 15 參數用於風向標（weathervane）功能。 此功能可讓飛機自動調整其朝向以減少風的影響，提高穩定性。 15：高度超過15米激活。
+
+VTX_ENABLE 1 參數用於啟用或停用視訊傳輸器（Video Transmitter, VTX）的控制。 1意味著啟用了視訊傳輸器的控制功能。
+
+SERVO Output Page
+1 Motor2 1000 1000 2000
+2 Motor1 1000 1000 2000
+3 Motor4 1100 1500 1900
+# Changed Motor3 to Motor4
+4 Disabled 1100 1500 1900 #Painless360 suggest: 1100 1000 2000
+5 Aileron 1100 1500 1900
+6 Aileron 1100 1500 1900
+7 Elevator 1100 1500 1900
+8 TiltMotorLeft 1100 1500 1900
+9 TiltMotorRight 1100 1500 1900
+10 Disabled 1100 1500 1900
+11 Motor7/TailTiltServo 1100 1500 1900
+
+Flight Modes Page
+Flight Mode 1 QLOITER
+Flight Mode 2 RTL
+Flight Mode 3 FBWA
+Flight Mode 4 FBWA
+Flight Mode 5 Manual
+Flight Mode 6 RTL
