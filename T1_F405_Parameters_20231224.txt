@@ -94,9 +94,9 @@ SERVO Output Page
 6 Aileron Reverse 1100 1500 1900
 # Aileron 1100 1500 1900
 7 Elevator 1100 1500 1900
-8 TiltMotorFrontLeft 850 1500 2025
+8 TiltMotorFrontLeft 850 1437 2025
 # TiltMotorLeft 1100 1500 1900
-9 TiltMotorFrontRight Reverse 875 1500 2050
+9 TiltMotorFrontRight Reverse 875 1462 2050
 # TiltMotorRight 1100 1500 1900
 10 Disabled 1100 1500 1900
 11 Motor7/TailTiltServo 1100 1500 1900
