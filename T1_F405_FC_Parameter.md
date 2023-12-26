@@ -20,14 +20,14 @@
 - **SERIAL6_BAUD 115** - Baud rate for the sixth serial port (Serial 6). 115 indicates a communication baud rate of 115200 bits/sec.
 
 ### Compass and Airspeed Sensor
-- **COMPASS_AUTODEC 1** - Controls whether the compass's magnetic declination is set automatically.
-/ Address 0x76 設備在I²C（Inter-Integrated Circuit）總線上的位址
-- **ARSPD_TYPE 0** - Sets the type of airspeed sensor. 0 means airspeed sensor function is disabled.
-/ ARSPD_TYPE 1 ARSPD_TYPE 參數定義了空速計的型別或模型。 1: MS4525
-/ ARSPD_TYPE 2 ARSPD_TYPE 參數定義了空速計的型別或模型。 2: analog
-/ ARSPD_TYPE 9 ARSPD_TYPE 參數定義了空速計的型別或模型。 9: DLVR-L10D
-/ ARSPD_BUS 1 參數定義了空速計連接到的I²C匯流排編號。 設定為1意味著空速計連接到I²C總線1。
-/ ARSPD_PIN 10 定義了飛控板上用於接收空速計訊號的類比輸入引腳。 設定為10表示空速計的訊號將從飛控板上的接腳編號10讀取。
+- **COMPASS_AUTODEC 1** - Controls whether the compass's magnetic declination is set automatically.  
+> Address 0x76 設備在I²C（Inter-Integrated Circuit）總線上的位址  
+- **ARSPD_TYPE 0** - Sets the type of airspeed sensor. 0 means airspeed sensor function is disabled.  
+> ARSPD_TYPE 1 ARSPD_TYPE 參數定義了空速計的型別或模型。 1: MS4525  
+> ARSPD_TYPE 2 ARSPD_TYPE 參數定義了空速計的型別或模型。 2: analog  
+> ARSPD_TYPE 9 ARSPD_TYPE 參數定義了空速計的型別或模型。 9: DLVR-L10D  
+> ARSPD_BUS 1 參數定義了空速計連接到的I²C匯流排編號。 設定為1意味著空速計連接到I²C總線1。  
+> ARSPD_PIN 10 定義了飛控板上用於接收空速計訊號的類比輸入引腳。 設定為10表示空速計的訊號將從飛控板上的接腳編號10讀取。  
 
 ### Remote Control Mapping
 - **RCMAP_PITCH 2** - Maps pitch control to channel 2 of the remote control.
@@ -85,8 +85,8 @@
 - **Q_TILE_RATE_UP 80** - 80表示從向前飛行到懸停時馬達角度變化的最大速度，最多80度/秒。
 - **Q_TRANSITION_MS 5000** - 參數用於設定從垂直起降（VTOL）模式到固定翼模式的過渡時間長度。 5000意味將花費5000毫秒完成過渡。
 - **Q_WVANE_HGT_MIN 15** - 參數用於風向標（weathervane）功能。 此功能可讓飛機自動調整其朝向以減少風的影響，提高穩定性。 15：高度超過15米激活。
-- **Q_TILT_YAW_ANGLE 12** - VTOL模式下的螺旋槳垂直位置
-/ Q_TILT_YAW_ANGLE 0
+- **Q_TILT_YAW_ANGLE 12** - VTOL模式下的螺旋槳垂直位置  
+> Q_TILT_YAW_ANGLE 0  
 
 ### Video Transmitter Control
 - **VTX_ENABLE 1** - Enables or disables control of the Video Transmitter (VTX).
@@ -94,19 +94,19 @@
 ### Servo Output Configuration
 - **1** Motor2 1000 1000 2000
 - **2** Motor1 1000 1000 2000
-- **3** Motor4 1000 1000 2000
-/ Motor4 1100 1500 1900
-/ Changed Motor3 to Motor4
-- **4** Motor3 Disabled 1100 1500 1900 /Painless360 suggest: 1100 1000 2000
-- **5** Aileron Reverse 1100 1500 1900
-/ Aileron 1100 1500 1900
-- **6** Aileron Reverse 1100 1500 1900
-/ Aileron 1100 1500 1900
-- **7** Elevator 1100 1500 1900
-- **8** TiltMotorFrontLeft 850 1437 2025
-/ TiltMotorLeft 1100 1500 1900
-- **9** TiltMotorFrontRight Reverse 875 1462 2050
-/ TiltMotorRight 1100 1500 1900
+- **3** Motor4 1000 1000 2000  
+> Motor4 1100 1500 1900  
+> Changed Motor3 to Motor4  
+- **4** Motor3 Disabled 1100 1500 1900 /Painless360 suggest: 1100 1000 2000  
+- **5** Aileron Reverse 1100 1500 1900  
+> Aileron 1100 1500 1900  
+- **6** Aileron Reverse 1100 1500 1900  
+> Aileron 1100 1500 1900  
+- **7** Elevator 1100 1500 1900  
+- **8** TiltMotorFrontLeft 850 1437 2025  
+> TiltMotorLeft 1100 1500 1900  
+- **9** TiltMotorFrontRight Reverse 875 1462 2050  
+> TiltMotorRight 1100 1500 1900  
 - **10** Disabled 1100 1500 1900
 - **11** Motor7/TailTiltServo 1100 1500 1900
 
@@ -119,5 +119,5 @@
 - **Flight Mode 6** RTL
 
 ### ESC Calibration
-- **SERVO_BLH_AUTO 1** Enable BLHeli_S ESC calibration tool pass Ardupilot
-/ SERVO_BLH_AUTO 0
+- **SERVO_BLH_AUTO 1** Enable BLHeli_S ESC calibration tool pass Ardupilot  
+> SERVO_BLH_AUTO 0  
