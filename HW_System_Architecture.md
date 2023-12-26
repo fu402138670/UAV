@@ -13,5 +13,14 @@
 - **Datalink Receiver** - Radiomaster ELRS RP3  
 - **Analog Camera** - Caddx Ratel 2  
 - **Video Transmitter** - PandaRC VT5804 V2 2.5W  
-- **Battery** - TATTU LiPo 4S1P 1350mAh
+> PandaRC VT5804-BAT V1 1.3W  
+- **Battery** - TATTU LiPo 4S1P 1350mAh  
 > TATTU LiPo 3S1P 880mAh
+
+## Remote Controller  
+- **Remote Controller** - Radiomaster TX12 MKII  
+- **LCD Display** - Hawkeye 4, Build in 5.8G NTSC/PAL Video Receiver
+
+## Accessories
+- **Battery Charger** - iMAX B6 Balance Charger
+
