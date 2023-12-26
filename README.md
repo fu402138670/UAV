@@ -11,7 +11,7 @@ Dec 2nd, 2023_
 
 ## F405 VTOP Ardupilot Parameter Setup
 
-- [https://github.com/fu402138670/UAV/blob/main/T1_F405_FC_Parameter.md]([https://github.com/fu402138670/UAV/blob/main/T1_F405_FC_Parameter.md)
+- [https://github.com/fu402138670/UAV/blob/main/T1_F405_FC_Parameter.md](https://github.com/fu402138670/UAV/blob/main/T1_F405_FC_Parameter.md)
 
 ## F405 VTOL IO-MAP Setup
 
