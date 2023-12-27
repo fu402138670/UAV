@@ -24,3 +24,7 @@
 ## Accessories
 - **Battery Charger** - iMAX B6 Balance Charger (NT$750/each)  
 
+## Purchasing Channels
+- [Hee Wing](https://www.heewing.com/) 
+- [Shopee:菜鳥飛行](https://shopee.tw/rfdiy)
+- [Shopee:史巴克](https://shopee.tw/indoorfly)
