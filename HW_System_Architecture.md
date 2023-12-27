@@ -11,7 +11,7 @@
 - **Flight Controller** - Matek F-405-VTOL (US$68.9/each)   
 - **GNSS Module** - Ublox M10Q-5883 (NT$1,010/each) 
 - **Datalink Receiver** - Radiomaster ELRS RP3 (NT$699/each)   
-- **Analog Camera** - Caddx Ratel 2 (NT$1,549/each)   
+- **Analog Camera** - Caddx Ratel 2 (NT$1,620/each)   
 - **Video Transmitter** - PandaRC VT5804 V2 2.5W (NT$1,250/each)   
 > PandaRC VT5804-BAT V1 1.3W  
 - **Battery** - TATTU LiPo 4S1P 1350mAh (NT$599/each)  
